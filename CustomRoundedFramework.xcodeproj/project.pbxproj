@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4FE665D4253E8B54004DC466 /* CustomRoundedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE665D2253E8B54004DC466 /* CustomRoundedFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FE665DC253E8BC3004DC466 /* CustomRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE665DB253E8BC3004DC466 /* CustomRounded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4FE665CF253E8B54004DC466 /* CustomRoundedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomRoundedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE665D2253E8B54004DC466 /* CustomRoundedFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomRoundedFramework.h; sourceTree = "<group>"; };
 		4FE665D3253E8B54004DC466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FE665DB253E8BC3004DC466 /* CustomRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRounded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		4FE665D1253E8B54004DC466 /* CustomRoundedFramework */ = {
 			isa = PBXGroup;
 			children = (
+				4FE665DB253E8BC3004DC466 /* CustomRounded.swift */,
 				4FE665D2253E8B54004DC466 /* CustomRoundedFramework.h */,
 				4FE665D3253E8B54004DC466 /* Info.plist */,
 			);
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					4FE665CE253E8B54004DC466 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE665DC253E8BC3004DC466 /* CustomRounded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		4FE665D8253E8B54004DC466 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T77C8L6C9;
@@ -269,6 +275,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CustomRoundedFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.imatek.CustomRoundedFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +293,7 @@
 		4FE665D9253E8B54004DC466 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T77C8L6C9;
@@ -293,6 +302,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CustomRoundedFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
