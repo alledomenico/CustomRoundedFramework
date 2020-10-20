@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "CustomRoundedFramework"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "Custom rounded corner for your UIView component added dependency."
-  spec.description  = "Rounded framework is a library to create custom corner for your UIView component."
+  spec.description  = "Rounded framework is a library to create custom corner for your UIView component. This pod is dependent to TTGSnackbar."
 
   # Replace value from spec.homepage with your own git link that setup for the project
   spec.homepage     = "https://github.com/alledomenico/CustomRoundedFramework"
